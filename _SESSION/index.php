@@ -26,7 +26,7 @@ session_start()
 
 <?php
 
-if (isset($_POST["login"])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST["username"]) && !empty($_POST["password"])) {
         $_SESSION["username"] = $_POST["username"];
         $_SESSION["password"] = $_POST["password"];

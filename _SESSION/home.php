@@ -33,7 +33,7 @@ session_start();
 echo $_SESSION["username"] . "<br>";
 echo $_SESSION["password"] . "<br>";
 
-if (isset($_POST["logout"])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     session_destroy();
     header("Location: index.php");
 }
