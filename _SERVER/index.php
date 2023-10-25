@@ -1,11 +1,3 @@
-<?php
-
-//? $_SERVER = SGB that contains headers, paths and script locations.
-//?            The entries in this array are created by the web server.
-//?            Shows nearly everything you need to know about the current web page env.
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,6 +17,10 @@
 </html>
 
 <?php
+
+//? $_SERVER = SGB that contains headers, paths and script locations.
+//?            The entries in this array are created by the web server.
+//?            Shows nearly everything you need to know about the current web page env.
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     foreach ($_SERVER as $key => $value) {
