@@ -2,12 +2,28 @@
 
 include("database.php");
 
-$username = "Gina";
-$password = "Rock238F";
+$username = "Megan";
+$password = "Space2001";
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO users (user, password)
-        VALUES ('$username', '$hash')";
+//? INSERTING DATA INTO DB
+// $sql = "INSERT INTO users (user, password)
+//         VALUES ('$username', '$hash')";
+
+//? RETRIEVING DATA FROM DB
+$sql = "SELECT * FROM users";
+$result = mysqli_query($connection, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo $row["id"] . "<br>";
+        echo $row["user"] . "<br>";
+        echo $row["password"] . "<br>";
+        echo $row["reg_date"] . "<br>";
+    }
+} else {
+    echo "No user found <br>";
+}
 
 try {
     mysqli_query($connection, $sql);
@@ -30,7 +46,7 @@ mysqli_close($connection);
 </head>
 
 <body>
-    Test
+    <p>Test</p>
 </body>
 
 </html>
