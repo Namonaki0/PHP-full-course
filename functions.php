@@ -1,5 +1,4 @@
 <?php
-
 // function hypotenuse(float $a, float $b)
 // {
 //     $c = sqrt($a ** 2 + $b ** 2);
@@ -26,7 +25,6 @@ $namearray = ["Andy", "Glover"];
 // $firstname = substr($username, 0, 4);   // Andy
 // $lastname = substr($username, 4);   // Glover
 $username = implode("-", $namearray);   // Andy-Glover
-
 
 // $username = explode(" ", $username);  // ["Andy", "Glover"]
 

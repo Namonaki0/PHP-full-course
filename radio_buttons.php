@@ -19,7 +19,6 @@
 </html>
 
 <?php
-
 if (isset($_POST["submit_card"])) {
     $credit_card = null;
     if (isset($_POST["credit_card"])) {

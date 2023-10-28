@@ -1,8 +1,4 @@
 <?php
-
-// $userName = $_POST["name"];
-// $userPassword = $_POST["password"];
-
 class userInfo
 {
     private $username;

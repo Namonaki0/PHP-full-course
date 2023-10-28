@@ -1,7 +1,5 @@
 <?php
-
 session_start()
-
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +23,6 @@ session_start()
 </html>
 
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!empty($_POST["username"]) && !empty($_POST["password"])) {
         $_SESSION["username"] = $_POST["username"];

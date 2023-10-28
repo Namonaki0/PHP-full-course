@@ -20,9 +20,7 @@
 
 </html>
 
-
 <?php
-
 if (isset($_POST["login"])) {
     //? SANITIZE
     $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);

@@ -22,7 +22,6 @@
 </html>
 
 <?php
-
 if (isset($_POST["submit"])) {
 
     if (isset($_POST["foods"]) && is_array($_POST["foods"])) {

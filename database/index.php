@@ -1,5 +1,4 @@
 <?php
-
 include("database.php");
 
 $username = "Megan";
@@ -33,7 +32,6 @@ try {
 }
 
 mysqli_close($connection);
-
 ?>
 
 <!DOCTYPE html>

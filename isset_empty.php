@@ -18,8 +18,6 @@
 </html>
 
 <?php
-
-
 //? isset() and empty()
 //? isset() = returns TRUE if a variable is declared and not null
 //? empty() = returns TRUE if a variable is not declared, false, null, ""

@@ -17,7 +17,6 @@
 </html>
 
 <?php
-
 //? associative arrays
 $capitals = array(
     "USA" => "Washington D.C.",
