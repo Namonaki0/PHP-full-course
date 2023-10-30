@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="sandbox.php" method="post">
+    <form action="arrays.php" method="post">
         <input type="text" name="country" placeholder="enter country...">
         <input type="submit" value="capital">
     </form>
@@ -17,6 +17,21 @@
 </html>
 
 <?php
+
+//? old way of creating arrays 
+// $guitars = array('Strat', 'Les Paul', 'Vela');
+
+//? current way of creating arrays
+$guitars = ['Strat', 'Les Paul', 'Vela'];
+
+print_r($guitars);
+
+if (isset($guitars[2])) {
+    echo $guitars[2];
+} else {
+    echo "Guitar does not exist";
+}
+
 //? associative arrays
 $capitals = array(
     "USA" => "Washington D.C.",
@@ -25,8 +40,8 @@ $capitals = array(
     "India" => "New Delhi"
 );
 
-$country = ucwords($_POST["country"]);
-$capital = $capitals[$country];
+// $country = ucwords($_POST["country"]);
+// $capital = $capitals[$country];
 
 // echo "The capital of {$country} is {$capital}";
 
