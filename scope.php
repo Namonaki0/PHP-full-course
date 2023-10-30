@@ -27,13 +27,14 @@ $guitars = [
 
 function pluck($arr, $key)
 {
-    $result = array_map(function ($item) use ($key) {
-        return $item[$key];
+    $guitar = array_map(function ($arr) use ($key) {
+        return $arr[$key];
     }, $arr);
-    return $result;
+
+    return $guitar;
 }
 
-$guitar_names = pluck($guitars, 'manufacturer');
+$guitar_names = pluck($guitars, "manufacturer");
 
 ?>
 

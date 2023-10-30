@@ -1,4 +1,5 @@
 <?php
+$title = "About";
 include("header.html")
 ?>
 
@@ -8,11 +9,11 @@ include("header.html")
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locations</title>
+    <title><?= $title ?></title>
 </head>
 
 <body>
-    <h1>This is the Locations page</h1>
+    <h1>This is the <?= $title ?> page</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente delectus accusantium iusto quos quam
         dolores nostrum quas quasi enim.</p>
 </body>
