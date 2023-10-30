@@ -1,11 +1,26 @@
 <?php
-// function hypotenuse(float $a, float $b)
-// {
-//     $c = sqrt($a ** 2 + $b ** 2);
-//     return $c;
-// }
+$title = "Functions";
 
-// echo hypotenuse(3, 4);
+$kvpGuitars = [
+    'prs' => 'Vela',
+    'Gibson' => 'Explorer',
+    'Fender' => 'Strat'
+];
+
+function output($value)
+{
+    echo '<pre>';
+    print_r($value);
+    echo '<pre>';
+}
+
+function hypotenuse(float $a, float $b)
+{
+    $c = sqrt($a ** 2 + $b ** 2);
+    return "<p>$c</p>";
+}
+
+echo hypotenuse(3, 4);
 
 //? string functions
 $username = "Andy Glover";
@@ -33,3 +48,22 @@ $username = implode("-", $namearray);   // Andy-Glover
 // }
 
 echo $username;
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title><?= $title ?></title>
+</head>
+
+<body>
+    <?php
+    output($kvpGuitars);
+    ?>
+</body>
+
+</html>
