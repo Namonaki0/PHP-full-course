@@ -1,7 +1,7 @@
 <?php
 $title = "_POST";
 
-if (isset($_POST["login"])) {
+if (isset($_POST["login"]) && $_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
 
     if ($email == false) {
